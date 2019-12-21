@@ -68,8 +68,8 @@ collections:
     output: true
     ##description: "My thoughts and ideas" # The post list page content
     feature_text: |
-      Welcome to the blog
-    feature_image: "https://picsum.photos/2560/600?image=866"
+      A Slice Of Rendering
+    feature_image: "/assets/logos/Pizza5MoreLight2.PNG"
 
 # 6. Jekyll collections settings
 defaults:
@@ -82,10 +82,10 @@ defaults:
 # 7. Site settings
 encoding: utf-8 # Make sure the encoding is right
 lang: en-GB # Set the site language
-title: "Programming & Rendering" # Site name or title, also used in jekyll-seo-tag
-logo: "/assets/logos/autoPortrait.png" # Site logo, also used in jekyll-seo-tag
+title: "A Slice of Rendering" # Site name or title, also used in jekyll-seo-tag
+logo: "/assets/logos/PizzaCircleGreenScreen.png" # Site logo, also used in jekyll-seo-tag
 profile: "/assets/logos/autoPortrait.png" # Site logo, also used in jekyll-seo-tag
-description: "This is a blog about rendering." # Site description and default description, also used in jekyll-seo-tag
+description: "My name is Marie, I'm a programmer and this is a blog about rendering." # Site description and default description, also used in jekyll-seo-tag
 url: "https://alembic.darn.es" # Site url, also used in jekyll-seo-tag
 baseurl: ""
 repo: "https://github.com/bugztroll/renderingBlog"

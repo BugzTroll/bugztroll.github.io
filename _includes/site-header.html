@@ -1,10 +1,14 @@
 <header class="header">
+    <hr>
   <div class="container">
-    <!-- {% if site.logo %}{% include site-logo.html %}{% endif %} -->
-    {% if site.title %}<small class="small">{{ site.title }}</small>{% endif %}
+
+    {% if site.logo %}{% include site-logo.html %}{% endif %}
+    <h2></h2>
+    <!-- {% if site.title %}<h2>{{ site.title }}</h2>{% endif %} -->
 
     {% include nav-header.html %}
   </div>
+  <hr>
 
   {% include site-feature.html %}
 
