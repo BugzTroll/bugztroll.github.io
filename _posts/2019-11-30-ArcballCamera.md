@@ -2,7 +2,7 @@
 title: How to implement a simple Arcball Camera.
 categories:
 - Camera
-feature_image: "/assets/logos/BannerPizza.PNG"
+feature_image: "/assets/logos/PizzaBanner.png"
 aside: false
 ---
 
