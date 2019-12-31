@@ -69,7 +69,7 @@ collections:
     ##description: "My thoughts and ideas" # The post list page content
     feature_text: |
       A Slice Of Rendering
-    feature_image: "/assets/logos/PizzaBanner.png"
+    feature_image: "https://i.imgur.com/ql5751o.png"
 
 # 6. Jekyll collections settings
 defaults:
