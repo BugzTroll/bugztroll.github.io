@@ -1,27 +1,27 @@
 <aside class="aside  typeset  aside--{{ include.align | default: 'left' }}">
   {% if page.layout == "post" %}
     <section class="section  section--related-posts">
-      {% include post-related.html %}
+     {% include post-related.html %}
     </section>
+
 
   {% elsif page.layout == "page" or page.layout == "home" or page.layout == "post" or page.layout == "posts"%}
     <section class="section  section--description">
       {% if site.profile %}{% include site-profile-img.html %}{% endif %}
-      <h5>Hello World!</h5>
+      <h5>Hello!</h5>
       <p>{{ site.description }}</p>
       {% include nav-social.html %}
     </section>
-
   {% elsif page.layout == "categories" %}
   <section class="section  section--description">
       {% if site.profile %}{% include site-profile-img.html %}{% endif %}
-      <h5>Hello World!</h5>
+      <h5>Hello!</h5>
       <p>{{ site.description }}</p>
       {% include nav-social.html %}
 
       <h3>Index</h3>
       {% include nav-categories.html %}
-    </section>
+  </section>
 
   {% endif %}
 

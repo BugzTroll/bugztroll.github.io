@@ -69,7 +69,7 @@ collections:
     ##description: "My thoughts and ideas" # The post list page content
     feature_text: |
       A Slice Of Rendering
-    feature_image: "/assets/logos/Pizza5MoreLight2.PNG"
+    feature_image: "/assets/logos/PizzaBanner.PNG"
 
 # 6. Jekyll collections settings
 defaults:
@@ -83,10 +83,10 @@ defaults:
 encoding: utf-8 # Make sure the encoding is right
 lang: en-GB # Set the site language
 title: "A Slice of Rendering" # Site name or title, also used in jekyll-seo-tag
-logo: "/assets/logos/PizzaCircleGreenScreen.png" # Site logo, also used in jekyll-seo-tag
-profile: "/assets/logos/autoPortrait.png" # Site logo, also used in jekyll-seo-tag
+logo: "/assets/logos/PizzaLogo.png" # Site logo, also used in jekyll-seo-tag
+profile: "/assets/logos/autoPortrait.png" # portrait image
 description: "My name is Marie, I'm a programmer and this is a blog about rendering." # Site description and default description, also used in jekyll-seo-tag
-url: "https://alembic.darn.es" # Site url, also used in jekyll-seo-tag
+url: "https://github.com/bugztroll/renderingBlog" # Site url, also used in jekyll-seo-tag
 baseurl: ""
 repo: "https://github.com/bugztroll/renderingBlog"
 email: "mariedube2@gmail.com"
@@ -98,14 +98,14 @@ css_inline: true # Will insert all styles into a single <style> block in the <he
 
 # 8. Site favicons & manifest icons
 favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
-  16: '/assets/logos/autoPortrait.png'
-  32: '/assets/logos/autoPortrait.png'
-  96: '/assets/logos/autoPortrait.png'
-  120: '/assets/logos/autoPortrait.png'
-  144: '/assets/logos/autoPortrait.png'
-  180: '/assets/logos/autoPortrait.png'
-  512: '/assets/logos/autoPortrait.png'
-  1024: '/assets/logos/autoPortrait.png'
+  16: '/assets/logos/PizzaCircleLogo.png'
+  32: '/assets/logos/PizzaCircleLogo.png'
+  96: '/assets/logos/PizzaCircleLogo.png'
+  120: '/assets/logos/PizzaCircleLogo.png'
+  144: '/assets/logos/PizzaCircleLogo.png'
+  180: '/assets/logos/PizzaCircleLogo.png'
+  512: '/assets/logos/PizzaCircleLogo.png'
+  1024: '/assets/logos/PizzaCircleLogo.png'
 
 # 9. Site navigation
 navigation_header:
@@ -113,8 +113,8 @@ navigation_header:
   url: /
 - title: Posts
   url: /categories/
-- title: Elements
-  url: /elements/
+# - title: Elements // used for reference
+#   url: /elements/
   
 navigation_footer:
 - title: Built with Jekyll using Alembic theme
