@@ -121,7 +121,7 @@ app->m_lastMousePos.y = yPos;
 ```
 
 ###### Final Result
-Tada ! We can now look around this beautifull donut.
+Tadaa ! We can now look around this beautiful donut.
 
 ![Up/down rotation](https://media.giphy.com/media/d5qxZaaafL61c40Snm/giphy.gif)  
 
