@@ -3,7 +3,9 @@ title: How to implement a simple Arcball Camera.
 categories:
 - Camera
 feature_image: "https://i.imgur.com/ql5751o.png"
-aside: false
+# feature_text: "A Slice Of Rendering"
+aside: true
+author: marie
 ---
 
 I'm currently working on building a physically based real-time renderer in Vulkan and one of the first thing I did after finishing the intro tutorial (aka 2 weeks later ) was to add an interactive camera so that I can look around my imported model. 
@@ -40,15 +42,15 @@ First, we are going to define a very simple camera class that contains all the e
 class Camera
 {
 public:
-	Camera() = default;
+    Camera() = default;
 
-	Camera(glm::vec3 eye, glm::vec3 lookat, glm::vec3 upVector)
-		: m_eye(std::move(eye))
-		, m_lookAt(std::move(lookat))
-		, m_upVector(std::move(upVector))
-	{
-		UpdateViewMatrix();
-	}
+    Camera(glm::vec3 eye, glm::vec3 lookat, glm::vec3 upVector)
+        : m_eye(std::move(eye))
+        , m_lookAt(std::move(lookat))
+        , m_upVector(std::move(upVector))
+    {
+        UpdateViewMatrix();
+    }
 
     glm::mat4x4 GetViewMatrix() const { return m_viewMatrix; }
     glm::vec3 GetEye() const { return m_eye; }
