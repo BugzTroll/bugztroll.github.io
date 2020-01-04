@@ -39,8 +39,8 @@ There are multiple way to implement this. In our case, we are going to find the 
 The main idea is to rotate the camera using a pivot point. Here's the algorithm:
 
 1. Calculate the amount of rotation in x and y given the mouse movement.
-2. Rotate the camera of x degree around the pivot point on the up axis.
-3. Using the updated camera position, rotate the camera of y degree around the pivot point on the right axis.
+2. Rotate the camera of theta_x radians around the pivot point on the up axis.
+3. Using the updated camera position, rotate the camera of theta_y radians around the pivot point on the right axis.
 
 ### Implementation
 I'm using glm for matrix operations and all the code will be written in C++.
