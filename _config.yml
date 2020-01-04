@@ -64,9 +64,9 @@ timezone: Canada/Eastern # Timezone for blog posts and alike
 # 5. Collections
 collections:
   posts:
-    ##title: Posts # Needed for Siteleaf
+    title: Posts # Needed for Siteleaf
     output: true
-    ##description: "My thoughts and ideas" # The post list page content
+    description: "" # The post list page content
     feature_text: |
       A Slice Of Rendering
     feature_image: "https://i.imgur.com/ql5751o.png"
