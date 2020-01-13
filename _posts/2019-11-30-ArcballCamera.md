@@ -9,6 +9,8 @@ aside: true
 author: marie
 ---
 
+*Keywords: Camera, glm, Rendering, Vulkan, C++, Orbit camera, Arcball camera, Rotation, Computer graphics, 3D programming*.
+
 I'm currently working on building a physically based real-time renderer in Vulkan and one of the first thing I did after finishing the intro tutorial (aka 2 weeks later ) was to add an interactive camera so that I can look around my imported model. 
 
 Since it was not so easy to find a good example on the web, I thought I could share the method I finaly used to do this.
@@ -22,12 +24,6 @@ Essentially, we want the camera to be rotated on a sphere surrounding the object
 Here's an example: 
 
 ![Left/right rotation](https://media.giphy.com/media/fsnKctjdBVQWo0pXLy/giphy.gif)  | | ![Up/down rotation](https://media.giphy.com/media/YSZbmrRYLQhhFJ6kdP/giphy.gif)  
-
-<!-- ###### Left/right Rotation example
-![Left/right rotation](https://media.giphy.com/media/fsnKctjdBVQWo0pXLy/giphy.gif)  
-
-###### Up/Down Rotation example
-![Up/down rotation](https://media.giphy.com/media/YSZbmrRYLQhhFJ6kdP/giphy.gif)   -->
 
 &nbsp;
 
@@ -94,9 +90,9 @@ private:
 ```
 #### Arcball rotation
 Then, in the application update function that is called every frame, we are going to update the position of the camera given the mouse position.
-In my case, the up vector is y = (0, 1, 0) and my lookat point is (0, 0, 0).
+In my case, the up vector is $$y = (0, 1, 0)$$ and my lookat point is $$(0, 0, 0)$$.
 
-We also need to handle the case were the up vector is the same as the view direction of the camera up vector.
+We also need to handle the case were the camera view direction is aligned with the up axis.
 
 ```cpp
 // Get the homogenous position of the camera and pivot point
