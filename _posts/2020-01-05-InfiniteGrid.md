@@ -169,7 +169,7 @@ layout(location = 2) in vec3 farPoint;
 layout(location = 0) out vec4 outColor;
 
 vec4 grid(vec3 fragPos3D, float scale) {
-    vec2 coord = R.xz * scale; // use the scale variable to set the distance between the lines
+    vec2 coord = fragPos3D.xz * scale; // use the scale variable to set the distance between the lines
     vec2 derivative = fwidth(coord);
     vec2 grid = abs(fract(coord - 0.5) - 0.5) / derivative;
     float line = min(grid.x, grid.y);
@@ -177,10 +177,10 @@ vec4 grid(vec3 fragPos3D, float scale) {
     float minimumx = min(derivative.x, 1);
     vec4 color = vec4(0.2, 0.2, 0.2, 1.0 - min(line, 1.0));
     // z axis
-    if(R.x > -0.1 * minimumx && R.x < 0.1 * minimumx)
+    if(fragPos3D.x > -0.1 * minimumx && fragPos3D.x < 0.1 * minimumx)
         color.z = 1.0;
     // x axis
-    if(R.z > -0.1 * minimumz && R.z < 0.1 * minimumz)
+    if(fragPos3D.z > -0.1 * minimumz && fragPos3D.z < 0.1 * minimumz)
         color.x = 1.0;
     return color;
 }
@@ -209,7 +209,7 @@ layout(location = 7) in mat4 fragProj;
 layout(location = 0) out vec4 outColor;
 
 vec4 grid(vec3 fragPos3D, float scale, bool drawAxis) {
-    vec2 coord = R.xz * scale;
+    vec2 coord = fragPos3D.xz * scale;
     vec2 derivative = fwidth(coord);
     vec2 grid = abs(fract(coord - 0.5) - 0.5) / derivative;
     float line = min(grid.x, grid.y);
@@ -217,10 +217,10 @@ vec4 grid(vec3 fragPos3D, float scale, bool drawAxis) {
     float minimumx = min(derivative.x, 1);
     vec4 color = vec4(0.2, 0.2, 0.2, 1.0 - min(line, 1.0));
     // z axis
-    if(R.x > -0.1 * minimumx && R.x < 0.1 * minimumx)
+    if(fragPos3D.x > -0.1 * minimumx && fragPos3D.x < 0.1 * minimumx)
         color.z = 1.0;
     // x axis
-    if(R.z > -0.1 * minimumz && R.z < 0.1 * minimumz)
+    if(fragPos3D.z > -0.1 * minimumz && fragPos3D.z < 0.1 * minimumz)
         color.x = 1.0;
     return color;
 }
@@ -257,7 +257,7 @@ layout(location = 8) in mat4 fragProj;
 layout(location = 0) out vec4 outColor;
 
 vec4 grid(vec3 fragPos3D, float scale, bool drawAxis) {
-    vec2 coord = R.xz * scale;
+    vec2 coord = fragPos3D.xz * scale;
     vec2 derivative = fwidth(coord);
     vec2 grid = abs(fract(coord - 0.5) - 0.5) / derivative;
     float line = min(grid.x, grid.y);
@@ -265,10 +265,10 @@ vec4 grid(vec3 fragPos3D, float scale, bool drawAxis) {
     float minimumx = min(derivative.x, 1);
     vec4 color = vec4(0.2, 0.2, 0.2, 1.0 - min(line, 1.0));
     // z axis
-    if(R.x > -0.1 * minimumx && R.x < 0.1 * minimumx)
+    if(fragPos3D.x > -0.1 * minimumx && fragPos3D.x < 0.1 * minimumx)
         color.z = 1.0;
     // x axis
-    if(R.z > -0.1 * minimumz && R.z < 0.1 * minimumz)
+    if(fragPos3D.z > -0.1 * minimumz && fragPos3D.z < 0.1 * minimumz)
         color.x = 1.0;
     return color;
 }
