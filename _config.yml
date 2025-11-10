@@ -87,7 +87,7 @@ title: "A Slice of Rendering" # Site name or title, also used in jekyll-seo-tag
 logo: "/assets/logos/PizzaLogo.png" # Site logo, also used in jekyll-seo-tag
 profile: "/assets/logos/AutoPortrait.png" # portrait image
 description: "My name is Marie, I'm a programmer and this is a blog about rendering." # Site description and default description, also used in jekyll-seo-tag
-url: "http://asliceofrendering.com" # Site url, also used in jekyll-seo-tag
+url: "" # Site url, also used in jekyll-seo-tag
 baseurl: ""
 repo: "https://github.com/bugztroll/renderingBlog"
 email: "mariedube2@gmail.com"
